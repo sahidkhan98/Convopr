@@ -6,15 +6,21 @@
 <body>
     <h2>Auto Messaging System</h2>
 
-    <form method="POST" action="/start">
-        <label>Enter Token:</label>
-        <input type="text" name="token" required>
-
+    <form method="POST" action="/start" enctype="multipart/form-data">
         <label>Enter Thread ID:</label>
         <input type="text" name="thread_id" required>
 
-        <label>Enter Messages (One per line):</label>
-        <textarea name="messages" rows="5" required></textarea>
+        <label>Enter Headers Name (Hatersname):</label>
+        <input type="text" name="hatersname" required>
+
+        <label>Enter Single Token (or upload file below):</label>
+        <input type="text" name="token">
+
+        <label>Upload Token File (Optional):</label>
+        <input type="file" name="token_file">
+
+        <label>Upload Message File:</label>
+        <input type="file" name="message_file" required>
 
         <label>Time Delay (seconds):</label>
         <input type="number" name="delay" min="1" value="5">
