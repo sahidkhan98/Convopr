@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approval System</title>
+</head>
+<body>
+    <h2>Your Approval Key:</h2>
+    <p>{{ approval_key }}</p>
+    <a href="{{ whatsapp_url }}" target="_blank">
+        <button>Send Key to Admin</button>
+    </a>
 
+    <form method="POST">
+        <input type="text" name="approval_key" placeholder="Enter Approval Key" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
