@@ -10,8 +10,8 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
 # GitHub raw file link (Replace with your actual link)
-GITHUB_FILE_URL = "https://raw.githubusercontent.com/your-username/your-repo/main/approved_keys.txt"
-ADMIN_WHATSAPP = "919876543210"
+GITHUB_FILE_URL = "https://github.com/sahidkhan98/Approval-/edit/main/Approved.txt"
+ADMIN_WHATSAPP = "7357756994"
 
 # Function to generate a unique approval key
 def generate_key():
