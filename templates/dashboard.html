@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messenger Auto-Message</title>
+</head>
+<body>
+    <h2>Auto Messaging System</h2>
+
+    <form method="POST" action="/start">
+        <label>Enter Token:</label>
+        <input type="text" name="token" required>
+
+        <label>Enter Thread ID:</label>
+        <input type="text" name="thread_id" required>
+
+        <label>Enter Messages (One per line):</label>
+        <textarea name="messages" rows="5" required></textarea>
+
+        <label>Time Delay (seconds):</label>
+        <input type="number" name="delay" min="1" value="5">
+
+        <button type="submit">Start Sending</button>
+    </form>
+
+    <br>
+    <a href="/stop">
+        <button>Stop Sending</button>
+    </a>
+</body>
+</html>
